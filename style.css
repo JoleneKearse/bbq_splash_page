@@ -85,10 +85,19 @@ body {
     letter-spacing: 1.3px;
 }
 
-.deco-txt {
+.border-gradient {
+    position: relative;
     border-top: .5rem solid var(--clr-accent);
-    border-image: linear-gradient(to right, #F18119, #DF4E13);
-    border-image-slice: 60 30;
+}
+
+.border-gradient::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    width: 100%;
+    background: linear-gradient(to right, #F18119, #DF4E13);
 }
 
 .small,
@@ -216,8 +225,10 @@ button {
     .hero-spacing {
         justify-content: center;
     }
+    input[type=text],
+    button,
     .form > p {
-        max-width: 50ch;
+        max-width: 250px;
     }
 
     /* form {
