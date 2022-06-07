@@ -61,8 +61,6 @@ body {
 
 /* ---------- TYPOGRAPHY ----------*/
 .site-title {
-    margin-top: 0;
-    max-width: 18ch;
     font-size: clamp(2.25rem, 1.3125rem + 4.1667vw, 3.5rem);
     text-align: center;
     line-height: 1;
@@ -110,7 +108,6 @@ body {
     display: flex;
     flex: 2 1 50%;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: var(--gap-lg);
     background-color: var(--clr-black);
     background-image: url(background.jpg);
@@ -131,13 +128,13 @@ body {
 }
 
 .site-title {
-    padding-top: var(--gap-sm);
+    padding: var(--gap-sm) var(--gap-sm) 0 var(--gap-sm);
 }
 
 .site-title,
 .deco-txt,
 .hero-cta {
-    padding-bottom: var(--gap-lg);
+    padding-bottom: var(--gap-med);
 }
 
 .deco-txt {
@@ -211,7 +208,7 @@ button {
     }
     .hero,
     .form {
-        height: 100vh;
+        min-height: 100vh;
     }
     .img-transparency {
         height: 100%;
