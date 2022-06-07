@@ -219,6 +219,9 @@ button {
     .hero-spacing {
         justify-content: center;
     }
+    .form > p {
+        max-width: 50ch;
+    }
 
     /* form {
         max-width: 3em;
