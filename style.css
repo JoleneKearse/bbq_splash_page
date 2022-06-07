@@ -80,8 +80,8 @@ body {
 }
 
 .emphasis,
-.hero > h2,
 .hero-cta,
+.deco-text,
 .form-title,
 .form-cta {
     font-weight: 900;
@@ -90,12 +90,14 @@ body {
 
 .deco-txt {
     border-top: .5rem solid var(--clr-accent);
-    border-image: linear-gradient(var(accent), #DF4E13);
+    border-image: linear-gradient(to right, #F18119, #DF4E13);
     border-image-slice: 60 30;
 }
 
-.small {
+.small,
+.deco-txt {
     font-size: .625rem;
+    letter-spacing: 1px;
 }
 
 /* ---------- LAYOUT ----------*/
