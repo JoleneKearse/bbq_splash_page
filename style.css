@@ -200,12 +200,15 @@ button {
     letter-spacing: 1.8px;
     color: var(--clr-white);
     background-image: linear-gradient(to right, #FFA51D, #DF4E13);
+    transition: 750ms ease-in-out;
 }
 
 .cta-btn:focus,
 .cta-btn:hover {
     background-image: linear-gradient(to right, #DF4E13, #FFA51D);
-    box-shadow: 1px 1px 3px #40404099;
+    color: var(--clr-black);
+    box-shadow: 1px 1px 7px #40404099;
+    transform: perspective(1000px);
 }
 /* ---------- MEDIA QUERIES ----------*/
 @media (min-width: 800px) {
