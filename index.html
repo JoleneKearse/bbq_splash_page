@@ -23,11 +23,11 @@
                         <p class="accent-txt uppercase deco-txt border-gradient">Mouthwateringly delicious</p>
                     </div>
                 </div> <!-- hero -->
-                <div class="form flex">
-                    <h2 class="form-title">Become a BBQ master!</h2>
-                    <p class="form-cta accent-txt uppercase">Register Today</p>
+                <div id="signUpComplete" class="form flex">
+                    <h2 id="congratsMsg" class="form-title">Become a BBQ master!</h2>
+                    <p id="congratsStatement" class="form-cta accent-txt uppercase">Register Today</p>
                     <p class="copy">BBQ isn't just standing in front of your grill with it on full blast and hoping for the best. It's an art! One way to speed up the process is to learn from the best. You can do just that by signing up for this free webinar!</p>
-                    <form action="#" class="flex">
+                    <form id="emailCollector" class="flex" action="#" method="post">
                         <input type="text" name="name" id="name" aria-label="name" placeholder="first name" required>
                         <input type="text" name="email" id="email" aria-label="email" placeholder="email" required>
                         <button type="submit" class="uppercase cta-btn">Register</button>
@@ -37,5 +37,6 @@
             </div> <!-- close form -->
         </div> <!-- close container -->
     </main>
+    <script src="script.js"></script>
 </body>
 </html>

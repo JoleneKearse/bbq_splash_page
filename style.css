@@ -24,6 +24,10 @@
     text-transform: uppercase;
 }
 
+.gap {
+    margin-bottom: 2.5em;
+}
+
 /* ---------- RESET ----------*/
 *,
 *::before,
@@ -92,20 +96,23 @@ body {
     border-image: linear-gradient(to right, #F18119, #DF4E13) 1;
 }
 
-/* .border-gradient::before {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    content: '';
-    width: 100%;
-    background: linear-gradient(to right, #F18119, #DF4E13);
-} */
-
 .small,
 .deco-txt {
     font-size: .625rem;
     letter-spacing: 1px;
+}
+
+.congrats {
+    margin-bottom: 1em;
+    font-size: clamp(2.25rem, 1.3125rem + 4.1667vw, 3.5rem);
+    line-height: 1;
+    background: linear-gradient(45deg, #FF895D 20%, #FF713B 50%, #F18119, #DF4E13);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 /* ---------- LAYOUT ----------*/
