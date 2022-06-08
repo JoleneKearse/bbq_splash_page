@@ -12,6 +12,8 @@
 .flex {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .accent-txt {
@@ -86,11 +88,11 @@ body {
 }
 
 .border-gradient {
-    position: relative;
-    border-top: .5rem solid var(--clr-accent);
+    border-top: .35rem solid var(--clr-accent);
+    border-image: linear-gradient(to right, #F18119, #DF4E13) 1;
 }
 
-.border-gradient::before {
+/* .border-gradient::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -98,7 +100,7 @@ body {
     content: '';
     width: 100%;
     background: linear-gradient(to right, #F18119, #DF4E13);
-}
+} */
 
 .small,
 .deco-txt {
