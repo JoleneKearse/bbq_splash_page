@@ -259,6 +259,8 @@ button {
         justify-content: center;
     }
     .site-title {
+        margin: 0;
+        padding-top: 0;
         padding-bottom: .25em;
     }
     .form * {
