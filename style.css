@@ -55,6 +55,7 @@ img {
 }
 
 body {
+    height: 100%;
     font-family: 'Source Sans Pro', sans-serif;
     font-size: clamp(1rem, 0.9063rem + 0.4167vw, 1.125rem);
     font-weight: 400;
@@ -274,6 +275,7 @@ button {
     }
     .hero *,
     .form * {
+        margin-bottom: 0;
         padding: 0;
     }
     .form-title,
