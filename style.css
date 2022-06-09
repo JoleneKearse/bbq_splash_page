@@ -292,7 +292,7 @@ button {
         padding: 1em;
     }
 }
-@media (min-width: 650px) and (max-width: 765px) and (orientation: landscape) {
+@media (min-width: 570px) and (max-width: 765px) and (orientation: landscape) {
     .desktop-flex {
         display: flex;
         flex-direction: row;
