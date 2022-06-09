@@ -134,11 +134,6 @@ body {
     background-blend-mode: multiply;
 }
 
-.img-transparency {
-    width: 100%;
-    background-color: #40404099;
-}
-
 .deco-text,
 .site-title,
 .hero-cta {
@@ -168,8 +163,6 @@ body {
 
 .form {
     flex: 1 1 50%;
-    justify-content: center;
-    align-items: center;
 }
 
 .form-cta {
@@ -255,15 +248,34 @@ button {
     .hero-spacing {
         justify-content: center;
     }
+    .site-title {
+        padding-bottom: .25em;
+    }
     input[type=text],
     button,
     .form > p {
         max-width: 250px;
     }
 }
-
-@media (max-width: 300px) and (orientation: landscape) {
-    body {
-        background-colour: blue;
+@media screen and (min-height: 320px) and (max-height: 640px) and (orientation: landscape) {
+    .hero {
+        height: 120%;
+    }
+    .hero *,
+    .form * {
+        padding: 0;
+    }
+    .form-title,
+    .form-cta,
+    .copy,
+    .small {
+        margin: 0;
+        padding: 0;
+    }
+    .form > p {
+        max-width: 375px;
+    }
+    .cta-btn {
+        padding: 1em;
     }
 }
